@@ -86,7 +86,7 @@ COPY ./download/public/desktop.jpg ./public/
 RUN pip3 install virtualenvwrapper
 ENV VIRTUALENVWRAPPER_PYTHON /usr/bin/python3
 RUN /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh;  mkvirtualenv -p /usr/bin/python3 advanced_web_dev"
-RUN /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh;  workon advanced_web_dev; pip install django==3.0.3; pip install psycopg2; pip install djangorestframework; pip install factory_boy"
+RUN /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh;  workon advanced_web_dev; pip install django==3.0.3; pip install psycopg2; pip install djangorestframework; pip install factory_boy; pip install django-bootstrap4"
 
 RUN echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3' >> ~/.bashrc
 # RUN echo 'export WORKON_HOME=/home/coder/project/envs' >> ~/.bashrc
